@@ -10,11 +10,15 @@
     "axios": "^0.19.2",
     "chart.js": "^2.9.3",
     "classnames": "^2.2.6",
+    "postcss": "^7.0.32",
+    "postcss-calc": "^7.0.2",
+    "postcss-preset-env": "^6.7.0",
     "react": "^16.13.1",
     "react-chartjs-2": "^2.9.0",
     "react-countup": "^4.3.3",
     "react-dom": "^16.13.1",
-    "react-scripts": "3.4.1"
+    "react-scripts": "3.4.1",
+    "react-toolbox": "^2.0.0-beta.13"
   },
   "scripts": {
     "start": "react-scripts start",
@@ -36,5 +40,8 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "postcss-loader": "^3.0.0"
   }
 }

@@ -1,6 +1,7 @@
 import React from 'react';
 import {Card, CardContent, Typography, Grid} from '@material-ui/core';
 import CountUp from 'react-countup';
+import styles from './cards-modules.css';
 
 const Cards = ( {data: {confirmed, recovered,deaths,lastUpdate}}) => {
     console.log(10);  //bug check
@@ -8,7 +9,7 @@ const Cards = ( {data: {confirmed, recovered,deaths,lastUpdate}}) => {
       return 'loading...';
     }
     return (
-        <div className>
+        <div className={styles.container}>
             <Grid container spacing={3} justify="center">
               <Grid item component={Card} xs={12} md={3} style = {{marginBottom:'10px',borderBottom:'10px solid rgba(0, 0,255, 0.5)'}} >
                 <CardContent>
