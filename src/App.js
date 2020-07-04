@@ -6,6 +6,7 @@ import {fetchData } from "./api";
 import image from "./image/image.png"
 
 
+
 class App extends React.Component {
   state = {
     data: {},
@@ -36,7 +37,7 @@ handleCountryChange = async (country) => {
       const { data,country } = this.state;
        return (
            <div className={styles.container}>
-             <img className={styles.image} src = {image} alt ="COVID-19"/>
+             <img src = {image} alt ="COVID-19" style ={{max_width:"770px",width:"100%",marginTop:"0",marginBottom:"10%" }}/>
              <Cards data={data}/>
              <CountryPicker handleCountryChange={this.handleCountryChange}/>
              <Charts data={data} country ={country}/>
