@@ -18,7 +18,7 @@ async componentDidMount(){
   
 }
 Exam= async()=>{
-  fetch('http://localhost:4000/run')
+  fetch('https://covid-react7547.firebaseapp.com/run')
   .then(response => {
     console.log(response);
   })
